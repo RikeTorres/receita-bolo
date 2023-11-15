@@ -2,79 +2,90 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-body{
+body {
     background-color: rgba(255, 68, 0, 0.708);
     color: rgb(255, 255, 255);
-    font-family: 'Pacifico', cursive; /* fonte */
+    font-family: 'Pacifico', cursive;
     font-size: 24px;
-    background-image: url('laranja.jpg'); 
-    background-size: cover; /* Garante quea imagem cubra todo o corpo */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-image: url('laranja.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
 }
 
-.sub{
+.sub {
     margin-top: 40px;
 }
 
-h1{
+.sub2{
+    margin-top: 40px;
+}
+
+h1 {
     color: rgb(255, 255, 255);
-    text-align: center; /* local do texto */
+    text-align: center;
     font-size: 70px;
     font-family: 'Pacifico', cursive;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
-.container{
+.container {
     width: 80%;
     margin: 80px;
     padding: 50px;
-    background-color: rgba(2, 2, 2, 0.635); 
-    border: 1px solid ; 
+    background-color: rgba(2, 2, 2, 0.635);
+    border: 1px solid; 
 }
 
 .container-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.container2{
-    width: 30%;
-    margin: 50px;
-    padding: 50px; 
-    border: 2px solid ; 
-    
+.container2,
+.container3 {
+    width: 48%;
+    margin: 20px 0;
+    box-sizing: border-box;
 }
 
-.container3{
-    width: 30%;
-    margin: 50px;
-    padding: 50px; 
-    border: 2px solid ; 
+.container2 {
+    border-right: 3px solid #ffffff;
 }
 
-h3{
+.container3 {
+    border-left: 3px solid #ffffff;
+}
+
+h3 {
     text-align: center;
 }
 
-.site,.site2{
-    text-align:center;
+.site,
+.site2 {
+    text-align: center;
 }
 
-/*arquivo style.css*/
-
-/* ... (seus estilos existentes) ... */
-
-a:link, a:visited {
-    color: #0077cc; /* Cor padrão do link */
-    text-decoration: none; /* Remove a sublinhado padrão */
+a:link,
+a:visited {
+    color: #0077cc;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #ffffff; /* Cor quando o mouse está sobre o link */
+    color: #ffffff;
 }
 
-
+@media screen and (max-width: 600px) {
+    .container2,
+    .container3 {
+        width: 100%;
+        border-right: none;
+        border-left: none;
+    }
+}
