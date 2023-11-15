@@ -7,7 +7,7 @@ body{
     color: rgb(255, 255, 255);
     font-family: 'Pacifico', cursive; /* fonte */
     font-size: 24px;
-    background-image: url('images/laranja.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-image: url('laranja.jpg'); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* Garante que a imagem cubra todo o corpo */
     background-repeat: no-repeat; /* Impede a repetição da imagem */
     margin: 0;
